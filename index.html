@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chernobrovkin Andrey | rsschool-cv</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+        * {
+            font-family: 'Open Sans', sans-serif;
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100%;   
+        }
+        .page{
+            flex-wrap: wrap;
+            padding: 50px 60px ;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .avatar{
+            margin: 0 70px 0 0;
+        }
+        .avatar img{
+            border-radius: 5px;    
+            max-width: 400px;
+            max-height: 400px;
+        }
+        .resume{
+            max-width: 600px;
+        }
+        div, ul{
+            margin: 0 0 15px 0;
+        }
+        .name_and_surname{
+            margin: 0 0 15px 0;
+        }
+        ul li{
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <div class="avatar">
+                <img src="https://avatars.githubusercontent.com/u/55671230?s=400&u=f6c54d97c3aa8d4fdaae3bb639b41771450cf500&v=4" alt="">
+            </div>
+            <div class="resume">
+                <div class="name_and_surname">
+                    <h1>Chernobrovkin Andrey</h1>
+                </div>
+                
+                <ul class="contacts">
+                    <li class="contacts__phone">Phone: 89080460753</li>
+                    <li class="contacts__email">Email: adam.holo@mail.ru</li>
+                    <li class="contacts__discord">Discord: Adam_An#2938</li>
+                    <li class="contacts__vk">VK: https://vk.com/ukikuromayge</li>
+                </ul>
+                <div class="purpose">
+                    <h3>My purpose is to become a Frontend-development and get a job at EPAM and develop to the Senior level, then become a fullstack-development.</h3>
+                </div>
+                <div class="personal_strengths">
+                    <div class="personal_strengths__title">
+                        <h3>My personal strengths:</h3>
+                    </div>
+                    <ul class="personal_strengths__list" type="circle">
+                        <li class="personal_strengths__item">Sociable</li>
+                        <li class="personal_strengths__item">I always try to understand my own or someone else’s work</li>
+                        <li class="personal_strengths__item">As much as possible ready to learn new skills</li>
+                    </ul>
+                </div>
+              
+                <div class="experience">
+                    <h3>I have no experience working in IT companies.</h3>
+                </div>
+                <div class="skills">
+                    <div class="skills__title">
+                        <h3>Skills:</h3>
+                    </div>
+                    <ul class="skills__list" type="circle">
+                        <li class="skills__item">I can work with node.js(npm, npx)</li>
+                        <li class="skills__item">ability to make up sites on the principle of mobile first, desktop first</li>
+                        <li class="skills__item">ability to make up cross-browser sites</li>
+                        <li class="skills__item">ability to work with ReactJS, webpack</li>
+                    </ul>
+                </div>
+                <div class="sample_code">
+                    <div class="sample_code__title">
+                        <h3>Sample JavaScript code:</h3>
+                    </div>
+                    <div class="sample_code__code">
+                        <code>t
+                            class Notification {<br/>
+                                constructor(text, idButton, textButton) {<br/>
+                                    this.text = text;<br/>
+                                    this.textButton = textButton;<br/>
+                                    this.idButton = idButton;<br/>
+                                }<br/><br/>
+                                
+                                createNotification() {<br/>
+                                    document.body.style.backgroundColor = "rgba(0,0,0,.3)"<br/>
+                                    this.center = document.createElement("center");<br/>
+                                    this.notification = document.createElement("div");<br/>
+                                    this.button = document.createElement("button");<br/>
+                                    this.textStart = document.createElement("p");<br/>
+                                    <br/>
+                                    this.center.classList.add("center")<br/>
+                                    <br/>
+                                    this.notification.classList.add("notification");<br/>
+                                    <br/>
+                                    this.textStart.id = "textStart";<br/>
+                                    this.textStart.innerHTML = this.text;<br/>
+                                    <br/>
+                                    this.button.id = this.idButton;<br/>
+                                    this.button.classList.add("buttonStart");<br/>
+                                    this.button.innerText = this.textButton;<br/>
+                                    <br/>
+                                    document.body.appendChild(this.center);<br/>
+                                    this.center.appendChild(this.notification);<br/>
+                                    this.notification.appendChild(this.textStart);<br/>
+                                    this.notification.appendChild(this.button);<br/>
+                                }<br/>
+                                <br/>
+                                deleteNotification() {<br/>
+                                    this.notification.style.animation = "unshow 1s 1";<br/>
+                                    document.querySelector(".notification").remove();<br/>
+                                    document.querySelector(".center").remove();<br/>
+                                }<br/>
+                            }<br/>
+                        </code>
+                    </div>
+                    <div class="education">
+                        <h3>Education: UDSU(IMITIF)</h3>
+                    </div>
+                    <div class="english_level">
+                        <h3>English level: a2 pre-intermediate</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
