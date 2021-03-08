@@ -25,10 +25,7 @@
         }
         .page{
             flex-wrap: wrap;
-            padding: 50px 60px ;
-            position: absolute;
-            top: 0;
-            left: 0;
+            padding: 50px 20px ;
             height: 100%;
             width: 100%;
             display: flex;
@@ -60,14 +57,32 @@
         .skills__list{
             list-style-type: circle;
         }
+        .logos{
+            max-width: 300px;
+            display: flex;
+        }
+        .logos__github{
+            width: 50px;
+        }
+        .logos__github img {
+            max-width: 50px;
+            padding: 10px;
+        }
+        .logos__rs_school{
+            width: 100px;
+        }
+        .logos__rs_school img {
+            max-width: 100px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="page">
-            <section class="avatar">
+            <div class="avatar">
                 <img src="https://avatars.githubusercontent.com/u/55671230?s=400&u=f6c54d97c3aa8d4fdaae3bb639b41771450cf500&v=4" alt="My photo">
-            </section>
+            </div>
             <section class="resume">
                 <div class="name_and_surname">
                     <h1>Chernobrovkin Andrey</h1>
@@ -159,6 +174,17 @@
                         <h3>English level: a2 pre-intermediate</h3>
                     </div>
                 </div>
+                <footer class="footer">
+                    <div class="logos">
+                        <a href="https://github.com/Adam0091/rsschool-cv/tree/gh-pages" class="logos__github">
+                            <img src="https://www.flaticon.com/svg/vstatic/svg/25/25231.svg?token=exp=1615216124~hmac=16bb560c690d1b21ccc176ffd6911d86" alt="github" >
+                        </a>
+
+                        <a href="https://rs.school/js/" class="logos__rs_school">
+                            <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school" >
+                        </a>
+                    </div>
+                </footer>
             </section>
         </div>
     </div>
