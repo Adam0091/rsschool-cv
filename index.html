@@ -66,7 +66,6 @@
         }
         .logos__github img {
             max-width: 50px;
-            padding: 10px;
         }
         .logos__rs_school{
             width: 100px;
@@ -127,45 +126,47 @@
                         <h3>Sample JavaScript code:</h3>
                     </div>
                     <div class="sample_code__code">
-                        <code>t
-                            class Notification {<br/>
-                                constructor(text, idButton, textButton) {<br/>
-                                    this.text = text;<br/>
-                                    this.textButton = textButton;<br/>
-                                    this.idButton = idButton;<br/>
-                                }<br/><br/>
-                                
-                                createNotification() {<br/>
-                                    document.body.style.backgroundColor = "rgba(0,0,0,.3)"<br/>
-                                    this.center = document.createElement("center");<br/>
-                                    this.notification = document.createElement("div");<br/>
-                                    this.button = document.createElement("button");<br/>
-                                    this.textStart = document.createElement("p");<br/>
-                                    <br/>
-                                    this.center.classList.add("center")<br/>
-                                    <br/>
-                                    this.notification.classList.add("notification");<br/>
-                                    <br/>
-                                    this.textStart.id = "textStart";<br/>
-                                    this.textStart.innerHTML = this.text;<br/>
-                                    <br/>
-                                    this.button.id = this.idButton;<br/>
-                                    this.button.classList.add("buttonStart");<br/>
-                                    this.button.innerText = this.textButton;<br/>
-                                    <br/>
-                                    document.body.appendChild(this.center);<br/>
-                                    this.center.appendChild(this.notification);<br/>
-                                    this.notification.appendChild(this.textStart);<br/>
-                                    this.notification.appendChild(this.button);<br/>
+                        <pre>
+                            <code>
+                                class Notification {
+                                    constructor(text, idButton, textButton) {
+                                        this.text = text;
+                                        this.textButton = textButton;
+                                        this.idButton = idButton;
+                                    }
+                                    
+                                    createNotification() {
+                                        document.body.style.backgroundColor = "rgba(0,0,0,.3)"
+                                        this.center = document.createElement("center");
+                                        this.notification = document.createElement("div");
+                                        this.button = document.createElement("button");
+                                        this.textStart = document.createElement("p");
+                                   
+                                        this.center.classList.add("center")
+                                        
+                                        this.notification.classList.add("notification");
+                                        
+                                        this.textStart.id = "textStart";
+                                        this.textStart.innerHTML = this.text;
+                       
+                                        this.button.id = this.idButton;
+                                        this.button.classList.add("buttonStart");
+                                        this.button.innerText = this.textButton;
+                                       
+                                        document.body.appendChild(this.center);
+                                        this.center.appendChild(this.notification);
+                                        this.notification.appendChild(this.textStart);
+                                        this.notification.appendChild(this.button);
+                                    }
+                                  
+                                    deleteNotification() {
+                                        this.notification.style.animation = "unshow 1s 1";
+                                        document.querySelector(".notification").remove();
+                                        document.querySelector(".center").remove();
+                                    }<br/>
                                 }<br/>
-                                <br/>
-                                deleteNotification() {<br/>
-                                    this.notification.style.animation = "unshow 1s 1";<br/>
-                                    document.querySelector(".notification").remove();<br/>
-                                    document.querySelector(".center").remove();<br/>
-                                }<br/>
-                            }<br/>
-                        </code>
+                            </code>
+                        </pre>
                     </div>
                     <div class="education">
                         <h3>Education: UDSU(IMITIF)</h3>
@@ -177,7 +178,7 @@
                 <footer class="footer">
                     <div class="logos">
                         <a href="https://github.com/Adam0091/rsschool-cv/tree/gh-pages" class="logos__github">
-                            <img src="https://www.flaticon.com/svg/vstatic/svg/25/25231.svg?token=exp=1615216124~hmac=16bb560c690d1b21ccc176ffd6911d86" alt="github" >
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" >
                         </a>
 
                         <a href="https://rs.school/js/" class="logos__rs_school">
