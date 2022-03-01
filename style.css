@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+a:active,
+/* активная/посещенная ссылка */
+a:hover,
+/* при наведении */
+a {
+  color: black;
+}
+
 .wrapper {
   position: absolute;
   top: 0;
@@ -14,7 +22,9 @@
   display: flex;
   flex-direction: column;
 }
+
 .page {
+  font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   position: relative;
   height: 100%;
@@ -25,25 +35,29 @@
 .page__aside {
   background-color: #1B1D21;
   flex: 1 0 20%;
+  display: flex;
+  flex-direction: column;
   color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
 }
 
 /*about-me*/
 .aside__about-me {
   margin: 32px 30px 0 34px;
 }
+
 .about-me__ava {
   margin: 0 auto 18px auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .about-me__ava img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
 }
+
 .about-me__name {
   text-align: center;
   font-style: normal;
@@ -51,20 +65,20 @@
   font-size: 18px;
   line-height: 21px;
 }
+
 .about-me__profession {
-  font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.1em;
   margin: 10px 0 0 0;
 }
+
 /*end about-me*/
 
 
 .aside__my-contact {
   margin: 51px 25px 0 24px;
-  font-weight: 300;
   font-size: 15px;
   line-height: 14px;
   text-align: center;
@@ -73,9 +87,11 @@
 .my-contact__item {
   margin: 8px 0 0 0;
 }
-.my-contact__item span{
+
+.my-contact__item span {
   margin-right: 4px;
 }
+
 .my-contact__item img {
   width: 30px;
   height: 30%;
@@ -86,6 +102,7 @@
   margin: 51px 14px 0 25px;
   position: relative;
 }
+
 .my-skills__list {
   width: 100%;
   height: 190px;
@@ -93,15 +110,18 @@
   flex-wrap: wrap;
   overflow-y: scroll;
 }
+
 .my-skills__list::-webkit-scrollbar {
-  width:0px;
+  width: 0px;
 }
+
 .my-skills__skill {
   border: 2px solid white;
   border-radius: 13px;
   padding: 4px 12px;
   margin: 0 8px 8px 0;
 }
+
 .my-skills__grad {
   position: absolute;
   width: 100%;
@@ -112,6 +132,7 @@
   transform: translateY(-100%);
   background: linear-gradient(to top, #1b1d21da, #1b1d2149);
 }
+
 .aside__qr-github {
   margin-top: 40px;
   width: 100%;
@@ -121,11 +142,13 @@
   align-items: center;
   justify-content: center;
 }
+
 .aside__qr-github img {
   width: 100px;
   height: 100px;
   border-radius: 5px;
 }
+
 .qr-github__text {
   margin-top: 8px;
   font-weight: 300;
@@ -135,4 +158,47 @@
 
 .page__main {
   flex: 1 0 80%;
+  padding: 40px 0 0 40px;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.about__title,
+.skills__list_title,
+.sample_code__title,
+.completed_projects__title,
+.education__VUS,
+.education__english {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.about__text {
+  margin-top: 11px;
+}
+
+.main__skills {
+  margin-top: 20px
+}
+
+.skills__list_skills {
+  margin-top: 11px;
+  margin-left: 40px;
+}
+
+.list__skill {
+  margin-top: 5px;
+}
+
+.main__sample_code {
+  margin-top: 20px;
+}
+
+.completed_projects__list {
+  margin: 15px;
+  margin-left: 40px;
+}
+
+.completed_projects__item {
+  margin-top: 5px;
 }
