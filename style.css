@@ -14,7 +14,6 @@ a {
 }
 
 .wrapper {
-  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -62,12 +61,12 @@ a {
   text-align: center;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 21px;
 }
 
 .about-me__profession {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.1em;
@@ -79,7 +78,7 @@ a {
 
 .aside__my-contact {
   margin: 51px 25px 0 24px;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 14px;
   text-align: center;
 }
@@ -134,7 +133,7 @@ a {
 }
 
 .aside__qr-github {
-  margin-top: 40px;
+  margin-top: 60px;
   width: 100%;
   height: 120px;
   display: flex;
@@ -144,23 +143,25 @@ a {
 }
 
 .aside__qr-github img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 5px;
 }
 
 .qr-github__text {
   margin-top: 8px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 10px;
 }
 
 .page__main {
+  background-color:  #53535183;
   flex: 1 0 80%;
-  padding: 40px 0 0 40px;
+  padding: 40px 0 40px 40px;
   font-style: normal;
   line-height: 21px;
+  font-size: 18px;
 }
 
 .about__title,
@@ -170,7 +171,7 @@ a {
 .education__VUS,
 .education__english {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .about__text {
@@ -192,6 +193,14 @@ a {
 
 .main__sample_code {
   margin-top: 20px;
+  max-width: 71%;
+}
+.prettyprint {
+
+}
+#sample_code__code {
+  background-color:  rgb(49, 48, 48);
+  border-radius: 20px;
 }
 
 .completed_projects__list {
@@ -201,4 +210,7 @@ a {
 
 .completed_projects__item {
   margin-top: 5px;
+}
+.education__english {
+  margin-top: 20px;
 }
