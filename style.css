@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
   margin: 0;
@@ -6,37 +6,48 @@
 }
 
 a:active,
-/* активная/посещенная ссылка */
-a:hover,
-/* при наведении */
 a {
+  text-decoration: none;
+  color: rgb(77, 75, 75);
+}
+a:hover {
   color: black;
+}
+body {
 }
 
 .wrapper {
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
+  min-height: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: rgb(97, 163, 236);
+  background: linear-gradient(309deg, rgba(97, 163, 236, 1) 0%, rgba(124, 58, 102, 1) 100%);
 }
 
 .page {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0 auto;
   position: relative;
+  border-radius: 80px 0 80px 0;
+  overflow: hidden;
   height: 100%;
   width: 70%;
+
   display: flex;
 }
 
 .page__aside {
-  background-color: #1B1D21;
+  background-color: #1b1d21;
   flex: 1 0 20%;
   display: flex;
   flex-direction: column;
-  color: #FFFFFF;
+
+  color: #ffffff;
 }
 
 /*about-me*/
@@ -75,7 +86,6 @@ a {
 
 /*end about-me*/
 
-
 .aside__my-contact {
   margin: 51px 25px 0 24px;
   font-size: 18px;
@@ -95,7 +105,6 @@ a {
   width: 30px;
   height: 30%;
 }
-
 
 .aside__my-skills {
   margin: 51px 14px 0 25px;
@@ -156,12 +165,14 @@ a {
 }
 
 .page__main {
-  background-color:  #53535183;
-  flex: 1 0 80%;
-  padding: 40px 0 40px 40px;
+  background-color: #d8d8d8;
+  padding: 40px 40px 40px 40px;
   font-style: normal;
   line-height: 21px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .about__title,
@@ -179,7 +190,7 @@ a {
 }
 
 .main__skills {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .skills__list_skills {
@@ -193,14 +204,6 @@ a {
 
 .main__sample_code {
   margin-top: 20px;
-  max-width: 71%;
-}
-.prettyprint {
-
-}
-#sample_code__code {
-  background-color:  rgb(49, 48, 48);
-  border-radius: 20px;
 }
 
 .completed_projects__list {
